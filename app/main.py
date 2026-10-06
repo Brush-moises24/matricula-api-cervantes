@@ -70,7 +70,7 @@ def comprobar_salud():
     return {"estado": "OK"}
 
 
-# El frontend (login + dashboard) se sirve desde la carpeta "frontend/".
+# # La aplicación está modularizada por routers y el frontend se sirve desde "frontend/".
 # Se monta al final para que las rutas de la API definidas arriba siempre
 # tengan prioridad sobre los archivos estáticos.
 CARPETA_FRONTEND = Path(__file__).resolve().parent.parent / "frontend"
